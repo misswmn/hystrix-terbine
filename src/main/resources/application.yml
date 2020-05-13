@@ -1,0 +1,13 @@
+spring:
+  application.name: hystrix-terbine-server
+server:
+  port: 10001
+turbine:
+  aggregator:
+    clusterConfig: default
+  appConfig: consumer-service
+  clusterNameExpression: new String("default")
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
